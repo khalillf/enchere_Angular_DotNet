@@ -1,0 +1,26 @@
+@import "~font-awesome/css/font-awesome.css";
+/* styles.css or styles.scss */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+/* Adjust the navbar-brand styling */
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color:white;
+}
+.navv {
+  background: #2C2C2C;
+  color: #2C2C2C;
+}
+
+/* Define the base font size for your HTML */
+html {
+  font-size: 14px;
+}
+
+/* Media query to change font size for screens with a minimum width of 768px */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
