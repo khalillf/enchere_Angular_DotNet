@@ -7,18 +7,20 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 import { ArtComponent } from './categories/art.component';
 import { EnchereComponent } from './ench/enchere.component';
+import { EncherePageComponent } from './Enchere/enchere.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent
+    LoginComponent,
+    SignupComponent,
+    EncherePageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -26,10 +28,11 @@ import { EnchereComponent } from './ench/enchere.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'login', component: CounterComponent },
-      { path: 'signup', component: FetchDataComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'signup', component: SignupComponent },
       { path: 'art', component: ArtComponent },
       { path: 'enchere', component: EnchereComponent },
+      { path: 'enchere/now', component: EncherePageComponent },
     ])
   ],
   providers: [],
