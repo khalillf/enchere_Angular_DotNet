@@ -21,7 +21,7 @@ namespace ENCHERE.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ENCHERE.model.User", b =>
+            modelBuilder.Entity("ENCHERE.model.Users", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()

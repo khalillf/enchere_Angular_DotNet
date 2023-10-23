@@ -8,8 +8,6 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<User> Users { get; set; }
-    // Add DbSet properties for other entity models, e.g., Products, Orders, etc.
+    public DbSet<Users> Users { get; set; }
 
-    // Add any additional configuration or model mappings here.
 }

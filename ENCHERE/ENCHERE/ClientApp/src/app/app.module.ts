@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
@@ -12,7 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { ArtComponent } from './categories/art.component';
 import { EnchereComponent } from './ench/enchere.component';
 import { EncherePageComponent } from './Enchere/enchere.component';
-
+import { UserComponent } from './users/users.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +19,8 @@ import { EncherePageComponent } from './Enchere/enchere.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    EncherePageComponent
+    EncherePageComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -33,6 +33,7 @@ import { EncherePageComponent } from './Enchere/enchere.component';
       { path: 'art', component: ArtComponent },
       { path: 'enchere', component: EnchereComponent },
       { path: 'enchere/now', component: EncherePageComponent },
+      { path: 'users', component: UserComponent },
     ])
   ],
   providers: [],

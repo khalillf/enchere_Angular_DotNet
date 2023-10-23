@@ -22,7 +22,7 @@ namespace YourNamespace
                         {
                             int id = reader.GetInt32(0);
                             string name = reader.GetString(1);
-                            // Continue reading other columns or perform other operations
+                            
                         }
                     }
                 }
